@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".B_changeProfile"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="@color/gray_app"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        android:layout_margin="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+                            <ImageView
+                                android:id="@+id/img_profile"
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/edittext1"
+                                android:layout_margin="20dp"
+                                android:scaleType="fitXY"/>
+                        </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="20dp">
+                        <EditText
+                            android:id="@+id/edt_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edittext1"
+                            android:hint="Enter your Name"
+                            android:textSize="20dp"
+                            android:textColor="@color/black"
+                            android:inputType="text"
+                            android:drawableStart="@drawable/ic_lock"
+                            android:drawablePadding="20dp"
+                            android:paddingStart="20dp"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="20dp">
+                        <Spinner
+                            android:id="@+id/sp_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edittext5"/>
+                    </LinearLayout>
+
+                    <!--                    <Spinner-->
+                    <!--                        android:id="@+id/sp_id"-->
+                    <!--                        android:layout_width="match_parent"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_marginTop="20dp"-->
+                    <!--                        android:background="@drawable/edittext5"/>-->
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="20dp">
+                        <EditText
+                            android:id="@+id/edt_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edittext1"
+                            android:hint="Enter Address"
+                            android:textSize="20dp"
+                            android:textColor="@color/black"
+                            android:minLines="3"
+                            android:maxLines="8"
+                            android:inputType="textMultiLine"
+                            android:drawableLeft="@drawable/ic_location"
+                            android:drawablePadding="30dp"
+                            android:paddingStart="20dp"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="35dp"
+                        android:layout_marginBottom="15dp">
+                        <Button
+                            android:id="@+id/btn_submit"
+                            android:layout_width="210dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edittext2"
+                            android:layout_gravity="center"
+                            android:text="Submit"
+                            android:textSize="20dp"
+                            android:textColor="@color/white"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </ScrollView>
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

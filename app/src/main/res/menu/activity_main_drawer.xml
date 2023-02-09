@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="DASHBOARD" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/person"
+            android:title="PROFILE" />
+        <item
+            android:id="@+id/nav_my_pro"
+            android:icon="@drawable/ic_my_post"
+            android:title="MY PROPERTY" />
+        <item
+            android:id="@+id/nav_auction"
+            android:icon="@drawable/auction"
+            android:title="AUCTION" />
+        <item
+            android:id="@+id/nav_result"
+            android:icon="@drawable/result"
+            android:title="RESULT" />
+        <item
+            android:id="@+id/nav_feedback"
+            android:icon="@drawable/comment"
+            android:title="FEEDBACK" />
+
+        <item android:title="Communicate">
+            <menu>
+                <item
+                    android:id="@+id/nav_share"
+                    android:icon="@drawable/share"
+                    android:title="SHARE" />
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/logout"
+                    android:title="LOGOUT" />
+            </menu>
+        </item>
+
+    </group>
+</menu>
